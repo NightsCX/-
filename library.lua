@@ -23,7 +23,10 @@ function Library:New(properties)
 
 	local firstTab = true
 
+	local ProtectGui = protectgui or (function() end);
 	local GUI = Instance.new("ScreenGui")
+	ProtectGui(GUI)
+
 	local Canvas = Instance.new("Frame")
 	local UILLCanvas = Instance.new("UIListLayout")
 	local Header = Instance.new("Frame")
