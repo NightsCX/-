@@ -81,7 +81,7 @@ function Library:New(properties)
 	end)
 
 	GUI.Name = "CNVS"
-	GUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	GUI.Parent = game:GetService("CoreGui")
 	GUI.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
 	Canvas.Name = "Canvas"
